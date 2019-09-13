@@ -1,26 +1,32 @@
 import React from 'react';
 import logo from './logo.svg';
+// import Chart from './Charts';
 import './App.css';
+//import CanvasJSReact from './canvasjs.react';
+import Header from './header/Header.js';
+import Chart from './charts/Chart.js';
+import GetData from './data/GetData.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ChartNew from './charts/ChartNew.js';
+import GetDataNew from './data/GetDataNew.js'
+
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Chart />
+        <GetData />
+
+
+
+        <ChartNew />
+        <GetDataNew />
+      </div>
+
+    );
+  }
 }
 
 export default App;

@@ -23,6 +23,12 @@
   color: #61dafb;
 }
 
+
+.jsonResponseData {
+  height: 400px;
+  overflow: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.candleStickChart {
+  width: 400px;
 }
